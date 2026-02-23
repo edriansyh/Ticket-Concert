@@ -1,4 +1,5 @@
 package Drian.Ticket;
+
 import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -19,7 +20,7 @@ public class jdbcTest {
             Exception.printStackTrace();
     }
 
-    String jdbcUrl = "jdbc:mysql://localhost:3306/tabel_barang";
+    String jdbcUrl = "jdbc:mysql://localhost:3306/ticket_konser";
     String username = "root";
     String password = "";
     try (Connection conn = DriverManager.getConnection(jdbcUrl, username, password)) {
